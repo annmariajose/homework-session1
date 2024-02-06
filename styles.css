@@ -228,6 +228,12 @@ td:first-child {
     background: #BDE1FF;
 }
 
+.highlightCell {
+    color:white;
+    background-color: #9ed034;
+    font-weight: bold;
+}
+
 /* Contact */
 #contact main p {
     padding-bottom: 0.8em;

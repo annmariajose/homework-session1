@@ -3,6 +3,9 @@ $(document).ready(function() {
     $("table tbody tr td:not(:first-child)").hover(function() {
         if ($(this).text() != notAvaiableText) {
             $(this).css('cursor', 'pointer');
+            $(this).click(function() {
+                $(this).toggleClass("highlightCell");
+            })
         }
     })
 })
