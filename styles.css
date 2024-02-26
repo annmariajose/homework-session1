@@ -324,15 +324,11 @@ form div {
     display:inline;
 }
 
-input[type="submit"] {
-    border: none;
-    /* background-color: #4977D1; */
+.btn {
     color: #fff;
-    width: 8em;
-    height: 3em;
+    padding: 0.5em 2em;
     font-weight: bold;
     font-size: large;
-    margin: auto;
 }
 
 /* Cliffs */
@@ -377,6 +373,9 @@ input[type="submit"] {
     .randomcode {
         width: 100%;
     }
+    .buttonContainer {
+        width: 100%;
+    }
     footer #nondisclaimer .copy {
         padding: 3.5em 0em 3.5em 0em;
         text-align: center;
@@ -393,6 +392,9 @@ input[type="submit"] {
 
 @media (min-width: 769px) {
     .randomcode {
+        width: 50%;
+    }
+    .buttonContainer {
         width: 50%;
     }
 }
