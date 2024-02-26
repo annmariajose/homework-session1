@@ -13,6 +13,8 @@ function PartnerImages() {
     var fileExtension = ".png";
     var imageList = [];
     var listArray = [];
+    var openDivTag = "<div class='col-sm-6 col-md-4 col-lg-2'>";
+    var closeDivTag = "</div>";
     var openlistTag = "<li class='partner'>";
     var closeListTag = "</li>";
     var src;
@@ -20,10 +22,10 @@ function PartnerImages() {
     for (var i = 0; i < fileNameAltTextArray.length; i++) {
         src = partnerFilePath + filePartnerText + fileNameAltTextArray[i][0] + fileExtension;
         imageList.push("<img src='" + src + "' alt='" + partnerText + " " + fileNameAltTextArray[i][1] + "'>");
-        listArray.push(openlistTag + imageList[i] + closeListTag);
+        listArray.push(openDivTag + openlistTag + imageList[i] + closeListTag + closeDivTag);
     }
 
-    document.getElementById("partners").innerHTML = listArray.join("");
+    document.getElementById("partnersRow").innerHTML = listArray.join("");
 }
 
 PartnerImages();
