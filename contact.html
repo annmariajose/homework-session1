@@ -57,49 +57,57 @@
                     </div>
                 </div>
                 
-                <form action="/contact" method="post">  
-                    <fieldset>  
-                        <legend>Contact Form</legend>
-                        <div class="textbox">
-                            <label>Name:</label> 
-                            <input type="text" name="name" placeholder="John Doe">  
-                            <label>Email:</label>  
-                            <input type="email" name="email" placeholder="johndoe@gmail.com"> 
-                            <label>Phone:</label>
-                            <input type="text" name="phone" placeholder="xxx-xxx-xxxx"> 
+                <form action="/contact" method="post">
+                    <legend>Contact Form</legend>
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <input type="text" class="form-control col-sm-6" name="name" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" class="form-control col-sm-6" name="email" placeholder="johndoe@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone:</label>
+                        <input type="text" class="form-control col-sm-6" name="phone" placeholder="xxx-xxx-xxxx">
+                    </div>
+                
+                    <div class="form-group">
+                        <label>Which Cliff are you inquiring?</label>
+                        <select class="form-control col-sm-6">
+                            <option>West Cliff</option>
+                            <option>North Cliff</option>
+                            <option>East Cliff</option>
+                            <option>South Cliff</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label class="form-check-label">How should we contact you?</label>
+                        <div class="mt-n3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="contact" value="email" checked>Email
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="contact" value="phone">Phone
+                            </div>
                         </div>
-                        
-                        <div class="radios">
-                            <label>How should we contact you?</label>  
-                            <input type="radio" name="contact" value="email" checked>Email 
-                            <input type="radio" name="contact" value="phone">Phone
-                        </div>
-                    
-                        <div class="selectmenu">
-                            <label>Which Cliff are you inquiring?</label>  
-                            <select>
-                                <option>West Cliff</option>
-                                <option>North Cliff</option>
-                                <option>East Cliff</option>
-                                <option>South Cliff</option>
-                            </select>
-                        </div>
-                        
-                        <div class="commentbox">
-                            <label>How did you hear about us:</label>  
-                            <textarea></textarea>
-                        </div>
-
-                        <!-- Random Codes -->
-                        <div class="randomcode">
-                            <input id="codeentered" type="text" name="randomcode" placeholder="Enter characters">
-                            <p id="codes"></p>
-                        </div>
-                    
-                        <div class="button">
-                            <input id="submit" type="submit" value="Inquire">
-                        </div> 
-                    </fieldset>  
+                    </div>
+                
+                    <div class="form-group">
+                        <label>How did you hear about us:</label>
+                        <textarea class="form-control col-sm-6" rows="10"></textarea>
+                    </div>
+                
+                    <!-- Random Codes -->
+                    <div class="randomcode">
+                        <input id="codeentered" type="text" name="randomcode" placeholder="Enter characters">
+                        <p id="codes"></p>
+                    </div>
+                
+                    <div class="button">
+                        <input id="submit" type="submit" value="Inquire">
+                    </div>
                 </form>
             </main>
             <section>

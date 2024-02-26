@@ -281,8 +281,9 @@ td:first-child {
     font-weight: bold;
 }
 
-fieldset {
+form {
     border: 2px solid #9ed034;
+    padding: 1.5em 1em;
 }
 
 legend {
@@ -294,30 +295,6 @@ legend {
 
 form div {
     padding: 1em 0 0 0;
-}
-
-.textbox label, .commentbox label {
-    display: block;
-}
-
-.textbox label:not(:first-child) {
-    padding: 0.5em 0 0 0;
-}
-
-.textbox input {
-    width: 52%;
-    height: 1.5em;
-}
-
-select {
-    width: 15em;
-    height: 1.5em;
-    text-align: center;
-}
-
-.commentbox textarea {
-    width: 52%;
-    height: 15em;
 }
 
 .button {
