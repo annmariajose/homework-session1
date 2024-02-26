@@ -1,32 +1,31 @@
-/* Header */
-header {
-    width: 100%;
-    min-height: 400px;
-    padding-top: 3em;
+/* Navigation */
+
+#home {
+    background: no-repeat white url(images/cliff_ocean.jpg);
+    background-size: 100% 400px;
 }
 
-#home header {
-    background: no-repeat lightgray url(images/cliff_ocean.jpg);
-    background-size: 1500px;
+#activities {
+    background: no-repeat white url(images/runfly.jpg);
+    background-size: 100% 400px;
 }
 
-#activities header {
-    background: no-repeat lightgray url(images/runfly.jpg);
-    background-size: 1500px;
+#contact {
+    background: no-repeat white url(images/cliff_rock.jpg);
+    background-size: 100% 400px;
 }
 
-#contact header {
-    background: no-repeat lightgray url(images/cliff_rock.jpg);
-    background-size: 1500px;
+#cliffs {
+    background: no-repeat white url(images/forest_cliff.jpeg);
+    background-size: 100% 400px;
 }
 
-#cliffs header {
-    background: no-repeat lightgray url(images/forest_cliff.jpeg);
-    background-size: 1500px;
+header{
+    height: 250px;
 }
 
 .main-header {
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(38, 41, 61, 0.7);
     max-width: 700px;
     width: 80%;
     margin: 2em auto 0 auto;
@@ -44,7 +43,6 @@ header {
     float: left;
 }
 
-/* Navigation */
 .main-menu {
     margin-left: 227px;
     font-weight: 400;
@@ -65,7 +63,7 @@ header {
 
 .main-menu ul li a {
     text-decoration: none;
-    color: #888;
+    color: rgb(255, 255, 255);
 }
 
 .main-menu ul li a:hover {
@@ -400,15 +398,8 @@ form div {
 }
 
 @media (max-width: 991px) {
-    .main-header {
-        position: relative;
-    }
-    .logo img {
-        position: relative;
-    }
     .main-menu {
         width: 200px;
-        background-color:rgb(255, 255, 255);
         position: absolute;
         right: -6em;
         top: 2em;
@@ -417,7 +408,7 @@ form div {
         margin-top: 2.5em;
         margin-left: -7em;
         margin-right: 7em;
-        background-color: rgb(255, 255, 255);;
+        background-color: rgb(38, 41, 61, 0.7);
       }
       .main-menu ul li {
         border-bottom: 1px solid rgba(202, 204, 202, 0.6);
