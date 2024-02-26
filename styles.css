@@ -304,20 +304,24 @@ form div {
 }
 
 .randomcode {
-    width: 52%;
-    margin: auto;
+    height: 5em;
+    padding-top: 0;
 }
 
-.randomcode input {
-    width: 10em;
-    height: 1.5em;
+#codeentered {
+    max-width: 10em;
+    height: 2em;
+    margin-top: 1em;
 }
 
-.randomcode #codes {
+#codes {
     background-color: lightgray;
-    padding: 12px 15px 12px 15px;
-    margin-left: 10px;
-    display: inline;
+    max-width: 7em;
+    height: 3em;
+    padding: 0.75em;
+    margin-left: 0.5em;
+    margin-top: 1em;
+    display:inline;
 }
 
 input[type="submit"] {
@@ -363,7 +367,16 @@ input[type="submit"] {
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
 
 /* Media Queries */
+@media (max-width: 575px) {
+    .randomcode {
+        height: 8em;
+        align-items: end;
+    }
+}
 @media (max-width: 768px) {
+    .randomcode {
+        width: 100%;
+    }
     footer #nondisclaimer .copy {
         padding: 3.5em 0em 3.5em 0em;
         text-align: center;
@@ -376,6 +389,12 @@ input[type="submit"] {
         text-align: center;
         float: none;
       }
+}
+
+@media (min-width: 769px) {
+    .randomcode {
+        width: 50%;
+    }
 }
 
 @media (max-width: 991px) {
