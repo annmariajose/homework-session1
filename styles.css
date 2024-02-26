@@ -32,6 +32,9 @@ header {
     margin: 2em auto 0 auto;
     min-height: 100px;
     height: 100px;
+    position: sticky;
+    z-index: 100;
+    top: 0;
 }
 
 .main-header .logo img {
