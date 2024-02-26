@@ -3,9 +3,14 @@
     <head>
         <title>Greatest Cliffs</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="styles.css">
     </head>
     <body id="home">
@@ -15,13 +20,21 @@
                     <div class="logo">
                         <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
                     </div>
-                    <nav class="main-menu">
-                        <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="cliffs.html">Cliffs</a></li>
-                            <li><a href="activities.html">Activities</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                    <nav class="main-menu navbar navbar-expand-lg navbar-light bg-transparent">
+                        <!-- Hamburger Menu -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="navbar-nav">
+                                <li class="active nav-item"><a href="index.html">Home</a></li>
+                                <li class="nav-item"><a href="cliffs.html">Cliffs</a></li>
+                                <li class="nav-item"><a href="activities.html">Activities</a></li>
+                                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
                     </nav>
                 </div>
             </header>
@@ -30,43 +43,73 @@
                 <span id="clock"></span>
             </section>
             <main>
-                <h1>Introducing California's Greatest Cliffs</h1>
-                <h3>What is so unique about California cliffs?</h3>
-                <p>
-                    California cliffs are one of a kind in the United States where no cliffs are as magnificent 
-                    and beautiful as them. And California is the only state that have cliffs that fronts all possible 
-                    environments: sea, river, mountains and canyons. There are four such individual unique cliffs: 
-                    West Cliff, North Cliff, East Cliff and South Cliff. All offer fantastic overlooking views, recreational 
-                    areas, camping sites, wildlife watch spots and overnight cabins.
-                </p>
-                <h3>Where are these cliffs?</h3>
-                <p>
-                    Located within a 100 mile radius from Irvine, California, they can be reached by roads easily. 
-                    The closest cliff to Irvine is West Cliff, which is the most popular and most visited.
-                </p>
+                <div class="grid_system">
+                    <h1 class="text-center m-5">Introducing California's Greatest Cliffs</h1>
+                    <div class="row card-deck">
+                        <div class="card col-sm-6 p-3">
+                            <div class="card-body">
+                                <h2 class="card-title text-center pb-4">What is so unique about California cliffs?</h2>
+                                <p class="card-text">
+                                    California cliffs are one of a kind in the United States where
+                                    no cliffs are as manificent and beautiful as them. And
+                                    California is the only state that have cliffs that fronts all
+                                    possible environments: sea, river, mountains and canyons. There
+                                    are four such individual unique cliffs: West Cliff, North Cliff,
+                                    East Cliff and South Cliff. All offer fantastic overlooking
+                                    views, recreational areas, camping sites, wildlife watch spots
+                                    and overnight cabins.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-sm-6 p-3">
+                            <div class="card-body">
+                                <h2 class="card-title text-center pb-4">Where are these cliffs?</h2>
+                                <p class="card-text">
+                                    Located within a 100 mile radius from Irvine, California, they
+                                    can be reached by roads easily. The closest cliff to Irvine is
+                                    West Cliff, which is the most popular and most visited.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
             <section>
                 <ul id="partners">
-                    <!--
-                    <li class="partner">
-                        <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
-                    </li>
-                    <li class="partner">
-                        <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
-                    </li>
-                    <li class="partner">
-                        <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
-                    </li>
-                    <li class="partner">
-                        <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
-                    </li>
-                    <li class="partner">
-                        <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
-                    </li>
-                    <li class="partner">
-                        <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
-                    </li>
-                    -->
+                    <div class="grid-system">
+                        <div id="partnersRow" class="row">
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <li class="partner">
+                                    <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
+                                </li>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <li class="partner">
+                                    <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+                                </li>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <li class="partner">
+                                    <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
+                                </li>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <li class="partner">
+                                    <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
+                                </li>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <li class="partner">
+                                    <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
+                                </li>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <li class="partner">
+                                    <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
+                                </li>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
             </section>
             <footer>
@@ -92,8 +135,12 @@
         <!-- Digital Clock -->
         <script src="js/digclock.js"></script>
 
-        <!-- Partners -->
-        <script src="js/site_scripts.js"></script>
+        <!-- Bootstrap jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap Popper -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     </body>
 </html>
