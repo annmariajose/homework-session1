@@ -194,15 +194,17 @@ footer #nondisclaimer .social .fa-instagram {
 table {
     width: 1000px;
     margin: 4em auto 0 auto;
+    text-align: center;
 }
 
 caption {
     caption-side: top;
     background: #852B1B;
-    height: 40px;
+    height: 50px;
     color: #fff;
     font-size: 1.3em;
     font-weight: bold;
+    text-align: center;
 }
 
 thead {
@@ -211,7 +213,6 @@ thead {
 
 tbody {
     background: #EEFFE6;
-    text-align: center;
 }
 
 th, td {
