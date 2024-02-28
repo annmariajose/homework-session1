@@ -97,13 +97,28 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="displaySelected">
-                    <div id="result">
-                        <h4>My selected activities to enquire:</h4>
-                    </div>
-                    <div id="sendInfo">
-                        <input type="email" placeholder="johndoe@gmail.com">
-                        <button>Get Info</button>
+
+                <!-- The Modal -->
+                <div class="modal" id="displaySelectedModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">My selected activities to enquire:</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                        
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                            </div>
+                        
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Back to Activities</button>
+                                <button type="button" class="btn btn-primary">Get Info</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>

@@ -11,16 +11,10 @@ $(document).ready(function() {
                 $(this).toggleClass("highlightCell"); //add or remove class when cell is selected
 
                 if ($(this).hasClass("highlightCell")) { //check if selected cell has class
-                    $("#displaySelected").css("visibility", "visible"); //make display box visible
-                    $("#displaySelected").css("margin-top", "2em"); //add spaces above display box
-                    $("#result").append("<p>" + content + "</p>"); //add child element with contents of cell
+                    $("#displaySelectedModal").modal('show'); //make display box visible
+                    $(".modal-body").append("<p>" + content + "</p>"); //add child element with contents of cell
                 } else { //if selected cell do not have class
-                    $("#result p:contains(" + content + ")").remove(); //remove child element
-
-                    if ($("#result").has("p").length == false) { //check if there are any child within parent
-                        $("#displaySelected").css("visibility", "hidden"); //make display box hidden
-                        $("#displaySelected").css("margin-top", "0"); //remove spaces above display box
-                    }
+                    $(".modal-body p:contains(" + content + ")").remove(); //remove child element
                 }
             })
         }
